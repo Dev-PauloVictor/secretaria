@@ -71,6 +71,25 @@ input{
   font-size: 20px;
 }
 
+/*icon*/
+#icon{
+ position: relative;
+top: 50%;
+left: 90%;
+transform: translate(-50%,-520%);
+background: url("../../assets/images/aberto.png");
+background-size:cover;
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+#icon.fechado{
+  background: url("../../assets/images/fechado.png");
+  background-size:cover;
+
+}
+/*fim icon*/
+
 .container,
 .lembrar,
 .link {
@@ -137,7 +156,7 @@ margin-top: 2px;
     background-color: #181920;
     border-radius: 10px;
     width: 96%;
-    height: 400px;
+    height: 420px;
     padding: 30px;
   }
   
@@ -157,5 +176,15 @@ margin-top: 2px;
 .lembrar,
 .link {
 margin-top: 2px;
+}
+
+#icon{
+  position: relative;
+ top: 50%;
+ left: 90%;
+ transform: translate(-50%,-640%);
+}
+p{
+  margin-bottom: 25px;
 }
 }
