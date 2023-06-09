@@ -1,0 +1,57 @@
+  /*css flutuante */
+  .box {
+    position: relative;
+  }
+  
+  .box .square {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgb(0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation: myAnimation 5s linear infinite;
+  }
+  
+  @keyframes myAnimation {
+    0%,
+    100% {
+      transform: translate(-30px);
+    }
+    50% {
+      transform: translate(30px);
+    }
+  }
+  
+  .box .square:nth-child(1) {
+    top: -750px;
+    right: 120px;
+    width: 100px;
+    height: 100px;
+    background-color: #181920;
+  
+  }
+  
+  .box .square:nth-child(3) {
+    bottom: 50px;
+    right: 200px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+    background-color: #181920;
+  }
+  
+  .box .square:nth-child(4) {
+    bottom: 120px;
+    left: 80px;
+    width: 70px;
+    height: 70px;
+    background-color: #181920;
+  }
+  
+  /*Reponsividade*/
+  @media screen and (max-width: 480px) {
+    .box .square {
+      display: none;
+    }
+  }
+  
