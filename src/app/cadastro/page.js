@@ -1,11 +1,14 @@
 import "../assets/css/cadastro.css"
+import Image from "next/image"
+import logo from "../assets/images/Logo_black.png"
+     
 
 export default function Cadastro() {
   return (
     <div>
         <section class="area-login">
       <div class="login-cadastro">
-      
+      <Image src={logo} alt="logo" width={60} height={60} priority />
         <form>
           <input type="text" name="nome" placeholder="Seu nome"/>
           <input type="text" name="nome fantasia" placeholder="Nome fantasia"/>
