@@ -76,7 +76,7 @@ input{
  position: relative;
 top: 50%;
 left: 90%;
-transform: translate(-50%,-520%);
+transform: translate(-50%,-560%);
 background: url("../../assets/images/aberto.png");
 background-size:cover;
 width: 30px;
@@ -170,12 +170,11 @@ margin-top: 2px;
 
 .lembrar {
   color: #cbd0f7;
-  
 }
 
 .lembrar,
 .link {
-margin-top: 2px;
+margin-top: 5px;
 }
 
 #icon{
@@ -183,6 +182,7 @@ margin-top: 2px;
  top: 50%;
  left: 90%;
  transform: translate(-50%,-640%);
+  
 }
 p{
   margin-bottom: 25px;

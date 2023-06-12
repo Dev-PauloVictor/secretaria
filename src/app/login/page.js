@@ -5,8 +5,6 @@ import Link from "next/link"
 import logo from "../assets/images/Logo_black.png"
 import "../assets/css/login.css"
 
-
-
 export default function Login() {
   return (
     <>
@@ -14,12 +12,11 @@ export default function Login() {
         <div class="login">
           <Image src={logo} alt="logo" width={60} height={60} priority />
           <form>
-            <input type="text" name="nome" placeholder="Seu nome" autoFocus required/>
-            <input type="password" id="password" name="senha" placeholder="Sua senha" required/>
+            <input type="text" name="nome" placeholder="Seu nome" autoFocus required />
+            <input type="password" id="password" name="senha" placeholder="Sua senha" required />
             <span id="icon" ></span>
-            
-            <div className="forget">
 
+            <div className="forget">
               <label className="container">
                 <input type="checkbox" />
                 <svg viewBox="0 0 64 64" height="1em" width="1em">
@@ -33,11 +30,9 @@ export default function Login() {
             <input type="submit" value="Entrar" />
             <p>Ainda não criou sua conta?<a href="../cadastro">Criar Conta</a></p>
           </form>
-          
+
         </div>
       </section>
-
-
     </>
   )
 }
