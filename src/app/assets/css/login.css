@@ -28,7 +28,7 @@ body {
 .login input {
   margin-top: 10px;
   background-color: #252a34;
-  color: #cdbdf7;
+  color: #ffff;
   height: 45px;
   border-radius: 5px;
   padding-left: 10px;
@@ -43,7 +43,7 @@ body {
 }
 
 .input ::placeholder {
-  color: #cbd0f7;
+  color: #ffff;
   font-size: 15px;
 }
 form [type='submit'] {
@@ -58,7 +58,7 @@ form [type='submit'] {
 }
 
 p {
-  color: #cdbdf7;
+  color: #ffff;
   margin-top: 5px;
 }
 
@@ -86,7 +86,6 @@ cursor: pointer;
 #icon.fechado{
   background: url("../../assets/images/fechado.png");
   background-size:cover;
-
 }
 /*fim icon*/
 
@@ -95,11 +94,11 @@ cursor: pointer;
 .link {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .lembrar {
-  color: #cbd0f7;
+  color: #ffff;
   margin-left: 5px;
   margin-right: 65px;
 }
@@ -157,7 +156,7 @@ margin-top: 2px;
     border-radius: 10px;
     width: 96%;
     height: 420px;
-    padding: 30px;
+    padding: 25px;
   }
   
   .container,
@@ -165,18 +164,13 @@ margin-top: 2px;
 .link {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .lembrar {
-  color: #cbd0f7;
+  color: #ffff;
 }
-
-.lembrar,
-.link {
-margin-top: 5px;
-}
-
+ 
 #icon{
   position: relative;
  top: 50%;

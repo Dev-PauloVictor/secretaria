@@ -16,7 +16,9 @@ export default function Login() {
     <>
       <section class="area-login">
         <div class="login">
+         
           <Image src={logo} alt="logo" width={60} height={60} priority />
+         
           <form>
             <input type="text" name="nome" placeholder="Seu nome" autoFocus required />
             <input
@@ -36,7 +38,6 @@ export default function Login() {
             <input type="submit" value="Entrar" />
             <p>Ainda não criou sua conta?<a href="../cadastro">Criar Conta</a></p>
           </form>
-
         </div>
       </section>
     </>
