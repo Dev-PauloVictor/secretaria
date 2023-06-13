@@ -1,11 +1,17 @@
 "use client";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Image from "next/image"
 import Link from "next/link"
 import logo from "../assets/images/Logo_black.png"
 import "../assets/css/login.css"
 
 export default function Login() {
+
+  const [open, setOpen] = useState(false)
+  // const toggle = () => {
+  //   setOpen(!open)
+  // }
+
   return (
     <>
       <section class="area-login">
@@ -13,8 +19,9 @@ export default function Login() {
           <Image src={logo} alt="logo" width={60} height={60} priority />
           <form>
             <input type="text" name="nome" placeholder="Seu nome" autoFocus required />
-            <input type="password" id="password" name="senha" placeholder="Sua senha" required />
-            <span id="icon" ></span>
+            <input
+              type={open ? "text" : "password"} id="password" name="senha" placeholder="Sua senha" required />
+            <span id="icon" onClick={() => setOpen(!open)}></span>
 
             <div className="forget">
               <label className="container">
@@ -25,7 +32,6 @@ export default function Login() {
               </label>
               <div className="lembrar">Lembre de mim</div>
               <Link className="link" href="#">Esqueceu a senha</Link>
-
             </div>
             <input type="submit" value="Entrar" />
             <p>Ainda não criou sua conta?<a href="../cadastro">Criar Conta</a></p>
